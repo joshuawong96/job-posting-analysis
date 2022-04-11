@@ -33,6 +33,7 @@ These files are in the `analysis` folder by default, unless another path is stat
 | `/data cleaning/cleaning_job_postings.ipynb` | Code for data cleaning and processing steps mentioned [above](#-data-cleaning-and-processing)
 | `ner_model.ipynb` | Training the custom `spaCy Named Entity Recognition (NER)` model to extract `'SKILLS'`. Model is saved in the folder `custom_ner_model`|
 | `kmeans_text_clustering.ipynb` | Text Clustering analysis fore removing redundant job postings | 
-| `visualisations_and_stats.ipynb` | EDA and visualisations created such as wordclouds, boxplots and barcharts | 
+| `eda_and_visualisations.ipynb` | EDA and visualisations created such as wordclouds, boxplots and barcharts | 
+| `creating_excel_data_for_gephi.ipynb` | Code to format data into correct input (in the form of nodes and edges) for Gephi to generate network graph | 
 
 Network analysis was done using the software Gephi. 
