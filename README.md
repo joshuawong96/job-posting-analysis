@@ -7,13 +7,13 @@ This repository contains the data and Jupyter notebooks used for the analysis of
 
 
 ### 📋 Data
-These files are in the `data/cleaned` folder by default.
+These files are in the `data/cleaned/` folder by default.
 | Cleaned Data Files | Description |
 | ----------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Individual Platforms | Each file in this folder contains cleaned data for a platform (MonsterSG, LinkedIn and NodeFlair) with common data fields across all platforms                                                               |
+| individual_platforms | Each file in this folder contains cleaned data for a platform (MonsterSG, LinkedIn and NodeFlair) with common data fields across all platforms                                                               |
 | `combined_data.json` | Single JSON file of data from all 3 platforms, with standardised data fields and data format. Extracted information can also be found in this dataset.                               |
 | `filtered_data.json` | JSON file of cleaned combined data after removing records of job roles that are not closely related to advanced cloud skills through text clustering | 
-| Nodes and Edges | |
+| gephi_data | Folder containing csv files of nodes and edges for network analysis |
 
 ### 🧹 Data Cleaning and Processing
 
@@ -27,13 +27,13 @@ These files are in the `data/cleaned` folder by default.
 | Removing Redundant Job Postings | Text Clustering was done based on the Job Titles and after interpreting the dominant cloud role for each cluster, clusters of job postings for roles that are not as relevant in using advanced cloud skills were removed. Roles such as Business Analyst and Data Scientist were removed. |
 
 ### ⚙ Analysis
-These files are in the `analysis` folder by default, unless another path is stated.
+These files are in the `analysis/` folder by default, unless another path is stated.
 | Notebook | Description |
 | ------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------- |
-| `/data cleaning/cleaning_job_postings.ipynb` | Code for data cleaning and processing steps mentioned [above](#-data-cleaning-and-processing)
+| `data cleaning/cleaning_job_postings.ipynb` | Code for data cleaning and processing steps mentioned [above](#-data-cleaning-and-processing)
 | `ner_model.ipynb` | Training the custom `spaCy Named Entity Recognition (NER)` model to extract `'SKILLS'`. Model is saved in the folder `custom_ner_model`|
 | `kmeans_text_clustering.ipynb` | Text Clustering analysis fore removing redundant job postings | 
 | `eda_and_visualisations.ipynb` | EDA and visualisations created such as wordclouds, boxplots and barcharts | 
-| `creating_excel_data_for_gephi.ipynb` | Code to format data into correct input (in the form of nodes and edges) for Gephi to generate network graph | 
+| `creating_excel_data_for_gephi.ipynb` | Code to format data into correct input (in the form of nodes and edges) for Gephi to generate network graph. Output are csv files. | 
 
 Network analysis was done using the software Gephi. 
